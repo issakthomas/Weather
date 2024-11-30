@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    line-height: .8;
+    font-family: 'Nyght';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+}
+
+.search i {
+    font-size: 20px;
+    margin: 8px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.suggestionBox {
+    position: absolute;
+    top: 36px;
+    background-color: white;
+    width: 100%;
+    border-top: 0;
+    outline: 2px solid;
+}
+
+.suggestionBox > div {
+    padding: 10px 10px;
+}
+
+.suggestionBox > div:hover {
+    background-color: beige;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid > div {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstTxt {
+    font-size: 80px;
+}
+
+.secondTxt {
+    font-size: 20px;
+}
+
+.thirdTxt {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#high {
+    margin-right: 10px;
+}
+
+#main {
+    font-size: 20px;
+}
+
+#icon {
+    height: 100px;
+}

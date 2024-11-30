@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fonts/nyght/nyght.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" name="" id="searchBox">
+            <i class='bx bx-search'></i>
+            <div id="suggestions" class="suggestionBox">
+            </div>
+        </div>
+        <div class="grid">
+            <div>
+                <div class="realTemp secondTxt"><span id="temp" class="firstTxt">28</span>C</div>
+                <div class="thirdTxt">
+                    <i class='bx bx-up-arrow-alt'></i>
+                    <span id="high">30</span>
+                    <i class='bx bx-down-arrow-alt'></i>
+                    <span id="low">26</span>
+                </div>
+            </div>
+            <div>
+                <img id="icon" src="assets/01.svg" alt="">
+            </div>
+            <div>
+                <div class="humidity secondTxt"><span id="hum" class="firstTxt">60</span>%</div>
+                <span class="thirdTxt">Humidity</span>
+            </div>
+            <div>
+                <div class="feelTemp secondTxt"><span id="ftemp" class="firstTxt">32</span>C</div>
+                <span class="thirdTxt">Real Feel&deg;</span>
+            </div>
+            <div>
+                <div class="cloudiness secondTxt"><span id="cloud" class="firstTxt">80</span>%</div>
+                <span class="thirdTxt">Cloudiness</span>
+            </div>
+            <div>
+                <div class="windSpeed secondTxt"><span id="speed" class="firstTxt">4</span>M/S</div>
+                <span class="thirdTxt">Wind Speed</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
